@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chap 6</title>
+  </head>
+  <body>
+    <script>
+      // 1st point
+      // add
+       document.write("<h2>Result</h2>");
+       var a = 10;
+      console.log(a);
+      document.write("The value of a is:" + a + "<br>");
+      document.write("............................... <br><br>");
+      var a = ++a;
+      console.log(a);
+      document.write("The value of ++a is:" + a + "<br>");
+      document.write("Now the value of a is:" + a + "<br> <br>");
+      var a = ++a;
+      console.log(a);
+      document.write("The value of a++ is: 11 <br>");
+      document.write("Now the value of a is:" + a + "<br> <br>");
+      var a = --a;
+      console.log(a);
+      document.write("The value of --a is:" + a + "<br>");
+      document.write("Now the value of a is:" + a + "<br> <br>");
+      var a = --a;
+      console.log(a);
+      document.write("The value of a-- is:11 <br>");
+      document.write("Now the value of a is:" + a + "<br> <br>");
+        // 2nd point
+      var b = 2;
+      var c = 1;
+      var result = --b - --c + ++c + c--;
+      console.log(result);
+      document.write("b is " + b + "<br>");
+      document.write("c is " + c + "<br>");
+      document.write("result is " + result + "<br>");
+        // 3rd point
+      var userName = prompt("please enter your name");
+      alert("hello, " + userName + " ! welcome to the server");
+      // 4th point
+      // 5th point
+      // var table = prompt("5")
+      // Prompt the user to enter a number
+      // var userInput = +prompt("Enter a number:");
+
+      // if(userInput === 5){
+      //   console.log('hello')
+      // }else{
+      //   console.log('else')
+      // }
+
+      // console.log(5 === "5");
+
+      // if (isNaN(userInput)) {
+      //   console.log("please enter number");
+      // }else if(userInput !== 5){
+      //   console.log("new number");
+      // }else{
+      //   console.log('number is 5')
+      // }
+        //    6point
+      var subjects1 = prompt("subjects 1");
+      var subject1Marks = +prompt(
+        "how many marks do you obtained in subject 1 ?"
+      );
+      console.log(subjects1);
+      console.log(subject1Marks);
+      var subjects2 = prompt("subjects 2");
+      var subject2Marks = +prompt(
+        "how many marks do you obtained in subject 2 ?"
+      );
+      console.log(subjects2);
+      console.log(subject2Marks);
+      var subjects3 = prompt("subjects 3");
+      var subject3Marks = +prompt(
+        "how many marks do you obtained in subject 3 ?"
+      );
+      console.log(subjects3);
+      console.log(subject3Marks);
+      //   var subject1Marks = prompt("how many marks you obtained in subject 1 ?")
+      //   var subject2Marks = prompt("how many marks you obtained in subject 2 ?")
+      //   var subject3Marks = prompt("how many marks you obtained in subject 3 ?")
+      var totalMarks = subject1Marks + subject2Marks + subject3Marks;
+      console.log("Each subject have 100 marks ");
+      console.log(
+        "Total marks that you are obtained in all subjects " +
+          totalMarks +
+          "out of 300"
+      );
+      var percentage = (totalMarks * 100) / 300;
+      console.log(percentage);
+      document.write(
+        "<h2> Subject Total marks Obtained marks Percentage</h2> <br>"
+      );
+      document.write(
+        subjects1 +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 100 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0 \xa0 \xa0 \xa0 \xa0" +
+          subject1Marks +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0 \xa0" +
+          subject1Marks +
+          "% <br>"
+      );
+      document.write(
+        subjects2 +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 100 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0 \xa0 \xa0 \xa0 \xa0" +
+          subject2Marks +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0 \xa0" +
+          subject2Marks +
+          "% <br>"
+      );
+      document.write(
+        subjects3 +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 100 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0 \xa0 \xa0 \xa0 \xa0" +
+          subject3Marks +
+          "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0 \xa0" +
+          subject3Marks +
+          "% <br>"
+      );
+      document.write(
+        "300 \xa0\xa0\xa0\xa0\xa0 \xa0\xa0" +
+          totalMarks +
+          "\xa0\xa0\xa0\xa0\xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0\xa0" +
+          percentage +
+          "%"
+      );
+    </script>
+  </body>
+</html>

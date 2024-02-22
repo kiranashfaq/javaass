@@ -1,0 +1,86 @@
+@font-face {
+  font-family: poppin;
+  src: url(./font/Agbalumo-Regular.ttf);
+}
+
+body {
+  background-image: url(./img/bgimg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-family: poppin;
+  font-size: 30px;
+  transition: 1s ease;
+  text-shadow: 2px 2px 5px rgb(207, 137, 31);
+  padding-left: 10%;
+}
+.links a:hover {
+  color: rgb(207, 137, 31);
+  text-shadow: 2px 2px 5px rgb(230, 230, 230);
+}
+ .name{
+    color: rgb(233, 233, 233);
+    text-shadow: 2px 2px 5px rgb(207, 137, 31);
+    font-family: poppin;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 4%;
+    padding-top: 2%;
+ }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+} */
+
+/* body {
+	display: flex;
+	min-height: 100vh;
+	background: #100f10;
+	align-items: center;
+	justify-content: center;
+} */
+
+h2 {
+	color: #f0e988;
+	font-size: 50px;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-text-stroke: 0.1vw #f7f7fe;
+}
+
+h2::before {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: rgb(207, 137, 31);
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-text);
+	border-right: 2px solid #f0e988;
+	-webkit-text-stroke: 0vw #f7f7fe;
+	animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
