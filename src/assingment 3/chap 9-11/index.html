@@ -3,120 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chap 9 - 11</title>
   </head>
   <body>
     <script>
-      // // 1point
-      // var cityName = prompt("Enter your City name");
-      // if (cityName === "karachi") {
-      //   alert("Welcome to City of light");
-      // } else {
-      //   alert("Welcome to City ");
-      // }
-      // //   2point
-      // var gender = prompt("Male or Female??");
-      // if (gender === "male") {
-      //   alert("Good Morning Sir.");
-      // } else {
-      //   alert("Good Morning Ma'am ");
-      // }
-      // //   3 point
-      // var signals = prompt("Enter any Signal color", "Red , Yellow , Green");
-      // if (signals === "red") {
-      //   alert("Must Stop");
-      // } else if (signals === "yellow") {
-      //   alert("Ready to move");
-      // } else {
-      //   alert("Move now");
-      // }
-      // //   4 point
-      // var fuels = prompt("enter your remaining fuel");
-      // if (fuels > "0.25") {
-      //   alert(" you have enough fuel");
-      // } else {
-      //   alert("please ! refill the fuel in your car");
-      // }
-      // // 5 point
-      // var a = 4;
-      // if (++a === 5) {
-      //   alert("given condition for variable a is true");
-      // }
+      // 1point
+      var cityName = prompt("Enter your City name");
+      if (cityName === "karachi") {
+        alert("Welcome to City of light");
+      } else {
+        alert("Welcome to City ");
+      }
+      //   2point
+      var gender = prompt("Male or Female??");
+      if (gender === "male") {
+        alert("Good Morning Sir.");
+      } else {
+        alert("Good Morning Ma'am ");
+      }
+      //   3 point
+      var signals = prompt("Enter any Signal color", "Red , Yellow , Green");
+      if (signals === "red") {
+        alert("Must Stop");
+      } else if (signals === "yellow") {
+        alert("Ready to move");
+       } else if (signals === "green") {
+         alert("Move now");
+       }
+      else{
+        alert("Please enter a valid signal color");
+      }
+      //   4 point
+      var fuels = prompt("enter your remaining fuel");
+      if (fuels > "0.25") {
+        alert(" you have enough fuel");
+      } else {
+        alert("please ! refill the fuel in your car");
+      }
+      // 5 point
+      var a = 4;
+      if (++a === 5) {
+        alert("given condition for variable a is true");
+      }
 
-      // var b = 82;
-      // if (b++ === 83) {
-      //   alert("given condition for variable b is true");
-      // }
-      // var c = 12;
-      // if (c++ === 13) {
-      //   alert("condition 1 is true");
-      // }
-      // if (c === 13) {
-      //   alert("condition 2 is true");
-      // }
-      // if (++c < 14) {
-      //   alert("condition 3 is true");
-      // }
-      // if (c === 14) {
-      //   alert("condition 4 is true");
-      // }
-      // var materialCost = 20000;
-      // var laborCost = 2000;
-      // var totalCost = materialCost + laborCost;
-      // if (totalCost === laborCost + materialCost) {
-      //   alert("The cost equals");
-      // }
-      // if (true) {
-      //   alert("True");
-      // }
-      // if (false) {
-      //   alert("False");
-      // }
+      var b = 82;
+      if (b++ === 83) {
+        alert("given condition for variable b is true");
+      }
+      var c = 12;
+      if (c++ === 13) {
+        alert("condition 1 is true");
+      }
+      if (c === 13) {
+        alert("condition 2 is true");
+      }
+      if (++c < 14) {
+        alert("condition 3 is true");
+      }
+      if (c === 14) {
+        alert("condition 4 is true");
+      }
+      var materialCost = 20000;
+      var laborCost = 2000;
+      var totalCost = materialCost + laborCost;
+      if (totalCost === laborCost + materialCost) {
+        alert("The cost equals");
+      }
+      if (true) {
+        alert("True");
+      }
+      if (false) {
+        alert("False");
+      }
 
-      // if ("car" < "cat") {
-      //   alert("car is smaller than cat");
-      // }
+      if ("car" < "cat") {
+        alert("car is smaller than cat");
+      }
 
-      // //   7point
-      // var secretNum = +prompt("7");
-      // if (secretNum == 7) {
-      //   alert("Bingo! Correct answer.");
-      // } else if (secretNum == ++7) {
-      //   alert("Close enough to the correct answer");
-      // }
-      // else {
-      //   alert("Wrong answer");
-      // }
-                 // 8 point
-      var divide = +prompt("Enter any number for division")
-      if (divide%3===0){
-        alert("Number is divisible by 3")
-       console.log(divide+ "is divisible by 3");
+      // 6 point
+      var subject = +prompt("Enter your obtained marks out 0f 300");
+      var percentage = (subject * 100) / 300;
+      document.write("Total marks : 300")
+      document.write("<br>")
+      document.write(`Marks obtained : ${subject} <br>`)
+      if (percentage >=80 ){
+        document.write("Grade : A-one <br>")
+        document.write(`percentage : ${percentage}% <br>`)
+        document.write("Remarks : Excellent <br>")
+      }
+       else if  (percentage >=70 ){
+        document.write("Grade : A <br>")
+        document.write(`percentage : ${percentage}% <br>`)
+        document.write("Remarks : Good <br>")
+      }
+       else if  (percentage >=60 ){
+        document.write("Grade : B <br>")
+        document.write(`percentage : ${percentage}% <br>`)
+        document.write("Remarks : You need to improve <br>")
+      }
+       else if  (percentage <60 ){
+        document.write("Grade : Fail <br>")
+        document.write(`percentage : ${percentage}% <br>`)
+        document.write("Remarks : Sorry <br>")
+      }
+       //   7point
+       var secretNum = +prompt("enter a number from ranging 1 to 10");
+      if (secretNum == 7) {
+        alert("Bingo! Correct answer.");
+      } else if (secretNum += 7) {
+        alert("Close enough to the correct answer");
+      }
+      else {
+        alert("Wrong answer");
+      }
+      // 8 point
+      var divide = +prompt("Enter any number for division");
+      if (divide % 3 === 0) {
+        alert("Number is divisible by 3");
+        console.log(divide + "is divisible by 3");
+      } else {
+        alert("Number is not divisible by 3");
+        console.log(divide + "is not divisible by 3");
+      }
+           // 9 point
+           var evenOdd = prompt("enter any for even odd number");
+      if(evenOdd %2 === 0 ){
+        var even = alert("even");
+        console.log("even");
+      }else if (evenOdd %2 === 1){
+         var odd = alert("odd");
+         console.log("odd");
+      }else{
+        alert("Please enter any number")
+      }
+      // 10 point
+      var temperature = prompt("Enter temperature");
+      if (temperature > 40) {
+        alert("It is too hot outside");
+      } else if (temperature > 30) {
+        alert("The Weather today is Normal");
+      } else if (temperature > 20) {
+        alert("Today's Weather is cool");
+      } else if (temperature > 10) {
+        alert("OMG! Today's Weather is so cool");
+      }
+      var firstNum = +prompt("Enter first number")
+      var secondNum = +prompt("Enter second number")
+      var operation = prompt("Which type of operator do you want" , "+ , - , * , % , /  ")
+      var add = "+"
+      var subtract = "-"
+      var multiply = "*"
+      var divide = "/"
+      var modulus = "%"
+      if (operation == add) {
+         var result = firstNum + secondNum;
+         alert("After Calculations" +result);
+        document.write(`First Number : ${firstNum} <br>`)
+        document.write(`Second Number : ${secondNum} <br>`)
+       document.write(`Operation ${firstNum} ${operation} ${secondNum} : ${result} <br>`)
+      }
+       else if (operation == subtract ) {
+         var result1 = firstNum - secondNum;
+         alert("After Calculations" +result1);
+        document.write(`First Number : ${firstNum} <br>`)
+        document.write(`Second Number : ${secondNum} <br>`)
+       document.write(`Operation ${firstNum} ${operation} ${secondNum} : ${result1} <br>`)
+      }
+       else if (operation == multiply) {
+         var result2 = firstNum * secondNum;
+         alert("After Calculations" +result2);
+        document.write(`First Number : ${firstNum} <br>`)
+        document.write(`Second Number : ${secondNum} <br>`)
+       document.write(`Operation ${firstNum} ${operation} ${secondNum} : ${result2} <br>`)
+      }
+       else if (operation == divide) {
+         var result3 = firstNum / secondNum;
+         alert("After Calculations" +result3);
+        document.write(`First Number : ${firstNum} <br>`)
+        document.write(`Second Number : ${secondNum} <br>`)
+       document.write(`Operation ${firstNum} ${operation} ${secondNum} : ${result3} <br>`)
+      }
+       else if (operation == modulus) {
+         var result4 = firstNum % secondNum;
+         alert("After Calculations" +result4);
+        document.write(`First Number : ${firstNum} <br>`)
+        document.write(`Second Number : ${secondNum} <br>`)
+       document.write(`Operation ${firstNum} ${operation} ${secondNum} : ${result4} <br>`)
       }
       else{
-        alert("Number is not divisible by 3")
-        console.log(divide+ "is not divisible by 3");
+        alert("please enter your num")
       }
-      //      // 9 point
-      //      var evenOdd = prompt("enter any number");
-      // if(evenOdd %2 === 0 ){
-      //   var even = alert("even");
-      //   console.log("even");
-      // }else{
-      //    var odd = alert("odd");
-      //    console.log("odd");
-      // }
-      // // 10 point
-      // var temperature = prompt("Enter temperature");
-      // if (temperature > 40) {
-      //   alert("It is too hot outside");
-      // } else if (temperature > 30) {
-      //   alert("The Weather today is Normal");
-      // } else if (temperature > 20) {
-      //   alert("Today's Weather is cool");
-      // } else if (temperature > 10) {
-      //   alert("OMG! Today's Weather is so cool");
-      // }
     </script>
   </body>
 </html>

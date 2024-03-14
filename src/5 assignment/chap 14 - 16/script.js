@@ -171,6 +171,47 @@ document.write(
 var cat = ["This ", "is ", "my ", "cat"];
 document.write(cat[0], cat[1], cat[2], cat[3]);
 
+// 13 point 
+document.write("<h2>Decices Fifo</h2>");
+var fifo = ["Keyboard" , "Mouse" , "Printer" , "Monitor" ]
+document.write(fifo , "<br> <br>")
+var shift = fifo.shift()
+document.write("OUT : <br>")
+document.write(shift , "<br>")
+
+var shift = fifo.shift();
+document.write("OUT : <br>");
+document.write(shift, "<br>");
+
+var shift = fifo.shift();
+document.write("OUT : <br>");
+document.write(shift, "<br>");
+
+var shift = fifo.shift();
+document.write("OUT : <br>");
+document.write(shift, "<br>");
+
+
+// 14 point 
+document.write("<h2>Decices Lifo</h2>");
+var lifo = ["Keyboard" , "Mouse" , "Printer" , "Monitor"]
+ document.write(lifo , "<br> <br>")
+var pop = lifo.pop()
+document.write("OUT : <br>")
+document.write( pop, "<br>")
+
+var pop = lifo.pop();
+document.write("OUT : <br>");
+document.write(pop, "<br>");
+
+var pop = lifo.pop()
+document.write("OUT : <br>")
+document.write( pop, "<br>")
+
+var pop = lifo.pop();
+document.write("OUT : <br>");
+document.write(pop, "<br>");
+
 // 15 point
 var mobilePhones = [
   "Apple ",
@@ -180,4 +221,17 @@ var mobilePhones = [
   "Sony",
   "Haier",
 ];
-document.dr;
+document.write("<h2>MobilePhones</h2>");
+document.write(
+  mobilePhones[0],
+  "<br>",
+  mobilePhones[1],
+  "<br>",
+  mobilePhones[2],
+  "<br>",
+  mobilePhones[3],
+  "<br>",
+  mobilePhones[4],
+  "<br>",
+  mobilePhones[5],
+);

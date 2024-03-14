@@ -22,9 +22,9 @@ if (budget === "high") {
       // prompt("we have this model in high camera quality", "ios15");
       alert("We have this model in high camera quality \n Iphone 15 ");
     }
-    var battery = prompt("how important is battery life to you? ");
+var battery = prompt("how important is battery life to you? ");
     if (battery == "short") {
-      // prompt("we have this model in short battery life", "iphone6");
+          // prompt("we have this model in short battery life", "iphone6");
       alert("We have this model in short battery life \n Iphone 11 Pro Max ");
     } else if (battery == "long") {
       // prompt("we have this model in long battery life", "iphone15");
