@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1 point
+              document.write("<h4>Even</h4>")
+              var even = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,]
+              document.write(even,"<br>")
+              for (let i = 0; i <even.length; i++){
+                 if (even[i] %2 == 0) {
+                  document.write(`${even[i]},`)
+
+      }
+              }
+              document.write("<br>")
+     //  2 point
+      var name = prompt("enter any word")
+      for (let i = name.length-1; i >=0; i--) {
+      document.write(name[i])
+      }
+    //  3 point
+      var name = prompt("enter any word");
+      var reverseName = ""
+      var match = "no"
+      for (let i = name.length-1; i >= 0; i--) {
+    reverseName +=  name[i]
+        if (reverseName == name) {
+            alert("The word you enter is a palendrom word")
+            match = "yes"
+             break
+            
+        }
+      } if(match === "no"){
+        alert("This is not a palendrom word")
+      }
+    // 4 point 
+    document.write("<h3>Largest Number</h3>");
+var largestNum = [24, 53, 78, 91, 12];
+var highest = 0;
+document.write(`Array items : ${largestNum}`);
+for (let i = 0; i < largestNum.length; i++) {
+  if (highest < largestNum[i]) {
+    highest = largestNum[i];
+  }
+}
+document.write(`The Largest Number is ${highest}`);
+    // 7 point 
+    var vowelWord = prompt("enter any word and check how many vowels letter in this word")
+    var matchfound = "no"
+    for (let i = 0; i < vowelWord.length; i++) {
+   if (vowelWord[i] == "a" || vowelWord[i] == "e" || vowelWord[i] == "i" || vowelWord[i] == "o" || vowelWord[i] == "u" ){
+    matchfound = "yes" 
+    alert(`The ${vowelWord} word has  ${vowelWord[i]} vowels letter`)
+    
+   }
+    } if(matchfound === "no"){
+      alert(`The ${vowelWord} word has no vowels letter`)
+    }
+  // 8point 
+    var factorial = +prompt("enter any num for finding factorial")
+  var factSum = 1
+  for (let i = 1; i <= factorial; i++) {
+    factSum = factSum * i
+
+  }
+  alert(`factorial of ${factorial} is ${factSum}`)
+  // 9 point
+   var num = +prompt("enter any num")
+  var sum = num + num 
+  alert(`sum of ${num} + ${num} = ${sum}`)
+  //10 point
+  var counting = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  document.write(counting, "<br>")
+  for (let i = counting.length - 1; i >=0; i--) {
+   document.write(`${counting[i]},`)
+    
+  }
+  
+ 
+
+    </script>
+  </body>
+</html>
